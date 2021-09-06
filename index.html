@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>Lamp Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo" alt='Background vector created by rawpixel.com - www.freepik.com'>
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id='btn'><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src='images/lamp1.png' class='lampOff' alt='freepik.com'>
+            <img src='images/lamp2.png' class='lampOn' id='light' alt='freepik.com'>
+        </div>
+
+        <div class="text-container">
+            <h1>Latest<br> in Creativity</h1>
+            <p>Use your crerativity for jump to the future</p>
+            <a href="">Check All Projects</a>
+        </div>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+        
+
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var light = document.getElementById('light');
+
+        function toggleBtn(){
+            btn.classList.toggle('active');
+            light.classList.toggle('on');
+        }
+
+    </script>
+
+
+</body>
+</html>
